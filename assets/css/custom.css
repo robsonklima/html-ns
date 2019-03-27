@@ -1,0 +1,47 @@
+.badge-primary {
+    margin-top: -11px !important;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+th, td { 
+    white-space: nowrap;
+}
+
+div.dataTables_wrapper {
+    margin: 0 auto;
+}
+
+div.container { max-width: 1200px }
+
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F8FA;
+    z-index: 9998;
+    text-align: center;
+}
+
+.plane-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+tfoot th {
+    font-size: 12px;
+    font-weight: inherit !important;
+}
+
+select {
+    height: 32px !important;
+}

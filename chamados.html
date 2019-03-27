@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/basic/favicon.ico" type="image/x-icon">
+    <title>SAT</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+</head>
+
+<body class="light">
+    <!-- Pre loader -->
+    <div id="loader" class="loader">
+    </div>
+    <div id="app">
+        <aside class="main-sidebar fixed offcanvas shadow" data-toggle='offcanvas'>
+            <section class="sidebar">
+                <div class="w-80px mt-3 mb-3 ml-3">
+                    <img src="assets/img/basic/logo.png" alt="">
+                </div>
+                <div class="relative">
+                    <div class="user-panel p-3 light mb-2">
+                        <div>
+                            <div class="float-left image">
+                                <img class="user_avatar" src="assets/img/dummy/u1.png" alt="User Image">
+                            </div>
+                            <div class="float-left info">
+                                <h6 class="font-weight-light mt-2 mb-1">Robson Lima</h6>
+                                <a href="index.html#">
+                                    <i class="icon-circle text-primary blink"></i> Online</a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="collapse multi-collapse" id="userSettingsCollapse">
+                            <div class="list-group mt-3 shadow">
+                                <a href="index.html" class="list-group-item list-group-item-action ">
+                                    <i class="mr-2 icon-umbrella text-blue"></i>Profile
+                                </a>
+                                <a href="index.html#" class="list-group-item list-group-item-action">
+                                    <i class="mr-2 icon-cogs text-yellow"></i>Settings</a>
+                                <a href="index.html#" class="list-group-item list-group-item-action">
+                                    <i class="mr-2 icon-security text-purple"></i>Change Password</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="header">
+                        <strong>MENU PRINCIPAL</strong>
+                    </li>
+                    <li class="treeview">
+                        <a href="index.html">
+                            <i class="icon icon-home2 blue-text s-14"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="indicadores.html">
+                            <i class="icon icon-area-chart blue-text s-14"></i>
+                            <span>Indicadores</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="index.html#">
+                            <i class="icon icon icon-notebook-list2 blue-text s-18"></i>
+                            <span>Chamados</span>
+                            <span class="badge r-3 badge-primary pull-right">4</span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="">
+                                    <i class="icon icon-circle-o"></i>Consulta</a>
+                            </li>
+                            <li>
+                                <a href="chamado.html">
+                                    <i class="icon icon-add"></i>Novo</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!--Sidebar End-->
+        <div class="page has-sidebar-left">
+            <div class="pos-f-t">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-light pt-2 pb-2 pl-4 pr-2">
+                        <div class="search-bar">
+                            <input class="transparent s-24 b-0 font-weight-lighter w-128 height-50" type="text" placeholder="Digite sua pesquisa...">
+                        </div>
+                        <a href="index.html#" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"
+                            class="paper-nav-toggle active ">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-expand d-flex navbar-dark justify-content-between bd-navbar blue accent-3 shadow">
+                <div class="relative">
+                    <div class="d-flex">
+                        <div>
+                            <a href="panel-page-dashboard2.html#" data-toggle="push-menu" class="paper-nav-toggle pp-nav-toggle">
+                                <i></i>
+                            </a>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <h1 class="nav-title text-white">Chamados</h1>
+                        </div>
+                    </div>
+                </div>
+                <!--Top Menu Start -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Exit -->
+                        <li>
+                            <a href="login.html" class="nav-link">
+                                <i class="icon-exit_to_app"></i>
+                            </a>
+                        </li>
+                        <!-- Notifications -->
+                        <li class="dropdown custom-dropdown notifications-menu">
+                            <a href="index.html#" class=" nav-link" data-toggle="dropdown" aria-expanded="false">
+                                <i class="icon-notifications "></i>
+                                <span class="badge badge-danger badge-mini rounded-circle">3</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="header">Você tem 10 notificações</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="index.html#">
+                                                <i class="icon icon-data_usage text-success"></i> 5 chamados de reparo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#">
+                                                <i class="icon icon-data_usage text-danger"></i> 3 chamados não transferidos
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#">
+                                                <i class="icon icon-data_usage text-yellow"></i> 2 novas mensagens
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer p-2 text-center">
+                                    <a href="index.html#">Ver todas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link " data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class=" icon-search3 "></i>
+                            </a>
+                        </li>
+                        <!-- Right Sidebar Toggle Button -->
+                        <li>
+                            <a class="nav-link ml-2" data-toggle="control-sidebar">
+                                <i class="icon-tasks "></i>
+                            </a>
+                        </li>
+                        <!-- User Account-->
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid animatedParent animateOnce my-3">
+                <div class="animated fadeInUpShort">
+                    <div class="card my-3 no-b">
+                        <div class="card-body">
+                            <table id="tb_chamados" class="table table-bordered table-hover data-tables" data-options='{"searching":true}' style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>OS</th>
+                                        <th>Abert.</th>
+                                        <th>Solic.</th>
+                                        <th>St.</th>
+                                        <th>Interv.</th>
+                                        <th>PAT/Região</th>
+                                        <th>Cliente</th>
+                                        <th>Local</th>
+                                        <th>Equip.</th>
+                                        <th>SLA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="">5303901</a></td>
+                                        <td>10/FEV 08:15</td>
+                                        <td>16/DEZ 15:00</td>
+                                        <td><span class="r-3 badge badge-warning">T</span></td>
+                                        <td class="align-center">INST</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">001</td>
+                                        <td>RUA TEODORO SAMPAI</td>
+                                        <td>HSL 5000</td>
+                                        <td class="align-center">58</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">5608218</a></td>
+                                        <td>28/MAR 18:27</td>
+                                        <td>28/MAR 18:27</td>
+                                        <td><span class="r-3 badge badge-warning">T</span></td>
+                                        <td class="align-center">INST</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">041</td>
+                                        <td>NEO TECHNOLOGY</td>
+                                        <td>POS VELO</td>
+                                        <td class="align-center">52</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">5633453</a></td>
+                                        <td>10/FEV 08:15</td>
+                                        <td>16/DEZ 15:00</td>
+                                        <td><span class="r-3 badge badge-danger">F</span></td>
+                                        <td class="align-center">INST</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">041</td>
+                                        <td>PONTO CHIQUE</td>
+                                        <td>POS VELO</td>
+                                        <td class="align-center">58</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">6212835</a></td>
+                                        <td>15/JAN 08:34</td>
+                                        <td>15/JAN 08:34</td>
+                                        <td><span class="r-3 badge badge-danger">F</span></td>
+                                        <td class="align-center">INST</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">004</td>
+                                        <td>CHAPADINHA</td>
+                                        <td>TMF 4100</td>
+                                        <td class="align-center">56.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">6212947</a></td>
+                                        <td>15/JAN 08:34</td>
+                                        <td>15/JAN 08:34</td>
+                                        <td><span class="r-3 badge badge-danger">F</span></td>
+                                        <td class="align-center">INST</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">004</td>
+                                        <td>AG.REDENÇÃO/PORTO</td>
+                                        <td>TMF 4100</td>
+                                        <td class="align-center">56.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">6214111</a></td>
+                                        <td>18/JAN 11:34</td>
+                                        <td>18/JAN 12:34</td>
+                                        <td><span class="r-3 badge badge-primary">A</span></td>
+                                        <td class="align-center">ABER</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">001</td>
+                                        <td>SOP-NOVA FRIBURGO</td>
+                                        <td>TDC-TAAD</td>
+                                        <td class="align-center">17.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">6214158</a></td>
+                                        <td>15/JAN 08:34</td>
+                                        <td>15/JAN 08:34</td>
+                                        <td><span class="r-3 badge badge-danger">F</span></td>
+                                        <td class="align-center">INST</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">001</td>
+                                        <td>AG MAXIMILIANO</td>
+                                        <td>TMF 4100</td>
+                                        <td class="align-center">21.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">6214526</a></td>
+                                        <td>15/JAN 08:34</td>
+                                        <td>15/JAN 08:34</td>
+                                        <td><span class="r-3 badge badge-secondary">P</span></td>
+                                        <td class="align-center">INST</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">001</td>
+                                        <td>AG.CASCA</td>
+                                        <td>TMF 4100</td>
+                                        <td class="align-center">15</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">6214518</a></td>
+                                        <td>15/JAN 08:34</td>
+                                        <td>15/JAN 08:34</td>
+                                        <td><span class="r-3 badge badge-secondary">P</span></td>
+                                        <td class="align-center">INST</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">001</td>
+                                        <td>AG.CASCA</td>
+                                        <td>TMF 4100</td>
+                                        <td class="align-center">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">6214629</a></td>
+                                        <td>18/JAN 11:34</td>
+                                        <td>18/JAN 12:34</td>
+                                        <td><span class="r-3 badge badge-primary">A</span></td>
+                                        <td class="align-center">ABER</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">001</td>
+                                        <td>CSP - COMPANHIA SI</td>
+                                        <td>TDC-TAAD</td>
+                                        <td class="align-center">17.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">6214634</a></td>
+                                        <td>18/JAN 11:34</td>
+                                        <td>18/JAN 12:34</td>
+                                        <td><span class="r-3 badge badge-primary">A</span></td>
+                                        <td class="align-center">ABER</td>
+                                        <td>PSP/OEST</td>
+                                        <td class="align-center">001</td>
+                                        <td>CSP - COMPANHIA SI</td>
+                                        <td>TDC-TAAD</td>
+                                        <td class="align-center">17.3</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>OS</th>
+                                        <th>Abert.</th>
+                                        <th>Solic.</th>
+                                        <th>St.</th>
+                                        <th>Interv.</th>
+                                        <th>PAT/Região</th>
+                                        <th>Cliente</th>
+                                        <th>Local</th>
+                                        <th>Equip.</th>
+                                        <th>SLA</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right Sidebar -->
+        <aside class="control-sidebar fixed white ">
+            <div class="slimScroll">
+                <div class="sidebar-header">
+                    <h4>Resumo dos Indicadores</h4>
+                    <a href="index.html#" data-toggle="control-sidebar" class="paper-nav-toggle  active">
+                        <i></i>
+                    </a>
+                </div>
+                <div class="p-3">
+                    <div>
+                        <div class="my-3">
+                            <span>Índices</span>
+                        </div>
+                        <div class="my-3">
+                            <small>Reincidência: 45%</small>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <small>Pendência: 60%</small>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <small>Índice de Quebra: 75%</small>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <small>SLA: 98%</small>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 98%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <small>Produtividade: 100%</small>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table id="recent-orders" class="table table-hover mb-0 ps-container ps-theme-default">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Cliente
+                                </td>
+                                <td>
+                                    Quebra
+                                </td>
+                                <td>
+                                    Parque
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="index.html#">BANRISUL</a>
+                                </td>
+                                <td>
+                                    <span class="badge badge-danger">25%</span>
+                                </td>
+                                <td>1918</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="index.html#">SICREDI</a>
+                                </td>
+                                <td>
+                                    <span class="badge badge-warning">14%</span>
+                                </td>
+                                <td>1976</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="index.html#">SICOOB</a>
+                                </td>
+                                <td>
+                                    <span class="badge badge-warning">12%</span>
+                                </td>
+                                <td>2095</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="index.html#">CEF</a>
+                                </td>
+                                <td>
+                                    <span class="badge badge-success">11%</span>
+                                </td>
+                                <td>658</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="index.html#">BANCO DO BRASIL</a>
+                                </td>
+                                <td>
+                                    <span class="badge badge-success">10%</span>
+                                </td>
+                                <td>4853</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </aside>
+        <!-- /.right-sidebar -->
+        <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+        <div class="control-sidebar-bg shadow white fixed"></div>
+    </div>
+    <!--/#app -->
+    <script src="assets/js/app.js"></script>
+
+    <!--
+    - Footer Part - Use Jquery anywhere at page.
+    - http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
+    -->
+    
+</body>
+
+</html>
