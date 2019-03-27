@@ -22,7 +22,7 @@
         <aside class="main-sidebar fixed offcanvas shadow" data-toggle='offcanvas'>
             <section class="sidebar">
                 <div class="w-80px mt-3 mb-3 ml-3">
-                    <img src="assets/img/basic/logo.png" alt="">
+                    <h3><i>Perto</i><b class="text-light-blue">SAT</b></h3>
                 </div>
                 <div class="relative">
                     <div class="user-panel p-3 light mb-2">
@@ -184,9 +184,14 @@
                                             <div class="col-md-4">
                                                 <div class="form-row">
                                                     <div class="form-group col-12 m-0">
-                                                        <label for="name" class="col-form-label s-12">
+                                                        <label for="cliente" class="col-form-label s-12">
                                                             <i class="icon-business_center mr-2"></i>CLIENTE</label>
-                                                        <input id="name" placeholder="Digite o Cliente" class="form-control r-0 light s-12" type="text" required>
+
+                                                        <input id="cliente" placeholder="Digite o Cliente" class="form-control r-0 light s-12 " type="text" required>
+
+                                                        <div class="invalid-feedback">
+                                                            Digite o Cliente!
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -285,42 +290,46 @@
 
                                         <br>
 
-                                        <div class="form-row">
-                                            <div class="form-group col-3 m-0">
-                                                <input class="col-form-label s-12" type="checkbox" value="" id="integracao">
+                                        <div class="form-row mt-1">
+                                            <div class="form-group col-6 m-0">
+                                                <label for="defeito" class="col-form-label s-12">
+                                                    <i class="icon-bookmark mr-2"></i>MARCAÇÕES ESPECIAIS</label> <br>
 
-                                                <label class="form-check-label" for="integracao">
-                                                    Integração
-                                                </label>
+                                                <div role="alert" class="alert alert-info">
+                                                    <div class="form-group col-12 m-0">
+                                                        <input class="col-form-label s-12" type="checkbox" value="" id="integracao">
+        
+                                                        <label class="form-check-label" for="integracao">
+                                                            Integração
+                                                        </label>
+                                                    </div>
+        
+                                                    <div class="form-group col-12 m-0">
+                                                        <input class="col-form-label s-12" type="checkbox" value="" id="observacoes">
+                                                        <label class="form-check-label" for="observacoes">
+                                                            Observações
+                                                        </label>
+                                                    </div>
+        
+                                                    <div class="form-group col-12 m-0">
+                                                        <input class="col-form-label s-12" type="checkbox" value="" id="marcacao_especial">
+                                                        <label class="form-check-label" for="marcacao_especial">
+                                                            Marcação Especial 
+                                                        </label>
+                                                    </div>
+            
+                                                    <div class="form-group col-12 m-0">
+                                                        <input class="col-form-label s-12" type="checkbox" value="" id="liberar_cofre">
+                                                        <label class="form-check-label" for="liberar_cofre">
+                                                            Liberar Fechadura do Cofre 
+                                                        </label>
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <div class="form-group col-3 m-0">
-                                                <input class="col-form-label s-12" type="checkbox" value="" id="observacoes">
-                                                <label class="form-check-label" for="observacoes">
-                                                    Observações
-                                                </label>
-                                            </div>
-
-                                            <div class="form-group col-3 m-0">
-                                                <input class="col-form-label s-12" type="checkbox" value="" id="marcacao_especial">
-                                                <label class="form-check-label" for="marcacao_especial">
-                                                    Marcação Especial 
-                                                </label>
-                                            </div>
-    
-                                            <div class="form-group col-3 m-0">
-                                                <input class="col-form-label s-12" type="checkbox" value="" id="liberar_cofre">
-                                                <label class="form-check-label" for="liberar_cofre">
-                                                    Liberar Fechadura do Cofre 
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <br>
-
-                                        <div class="form-row">
-                                            <div class="form-group col-12 m-0">
-                                                <label for="defeito" class="col-form-label s-12">DEFEITO RELATADO</label> <br>
+                                            <div class="form-group col-6 m-0">
+                                                <label for="defeito" class="col-form-label s-12">
+                                                    <i class="icon-text_format mr-2"></i>DEFEITO RELATADO</label> <br>
 
                                                 <textarea name="defeito" id="defeito" cols="30" rows="5" 
                                                     class="form-control r-0 light s-12 no-resize" 
@@ -333,8 +342,8 @@
                                         </div>
                                     </div>
 
-                                    <div class="card-body">
-                                        <button type="submit" class="btn btn-primary btn-lg">
+                                    <div class="card-body align-right">
+                                        <button type="submit" class="btn btn-primary">
                                             <i class="icon-save mr-2"></i>Salvar</button>
                                     </div>
                                 </div>

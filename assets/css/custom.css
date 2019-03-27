@@ -37,6 +37,10 @@ div.container { max-width: 1200px }
     text-align: center !important;
 }
 
+.align-right {
+    text-align: right !important;
+}
+
 tfoot th {
     font-size: 12px;
     font-weight: inherit !important;
@@ -44,4 +48,8 @@ tfoot th {
 
 select {
     height: 32px !important;
+}
+
+textarea {
+    height: 114px;
 }
