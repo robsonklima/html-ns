@@ -53,3 +53,7 @@ select {
 textarea {
     height: 114px;
 }
+
+.even {
+    background-color: #eeeeee !important;
+}

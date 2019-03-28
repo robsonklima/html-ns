@@ -32,8 +32,7 @@
                             </div>
                             <div class="float-left info">
                                 <h6 class="font-weight-light mt-2 mb-1">Robson Lima</h6>
-                                <a href="index.html#">
-                                    <i class="icon-circle text-primary blink"></i> Online</a>
+                                <a href="">Sistema Administrador</a>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -176,19 +175,22 @@
                 <div class="animated fadeInUpShort">
                     <div class="card my-3 no-b">
                         <div class="card-body">
-                            <table id="tb_chamados" class="table table-bordered table-hover data-tables" data-options='{"searching":true}' style="width:100%">
+                            <table id="tb_chamados" class="table table-bordered table-striped table-hover data-tables" 
+                                
+                                data-options='{"searching":true, "order": [[ 0, "desc" ]]} "stripeClasses": ["odd-row", "even-row"]' style="width:100%">
                                 <thead>
                                     <tr>
                                         <th>OS</th>
-                                        <th>Abert.</th>
-                                        <th>Solic.</th>
-                                        <th>St.</th>
-                                        <th>Interv.</th>
-                                        <th>PAT/Região</th>
-                                        <th>Cliente</th>
-                                        <th>Local</th>
-                                        <th>Equip.</th>
-                                        <th>SLA</th>
+                                        <th>Abertura</th>
+                                        <th>Prazo SLA</th>
+                                        <th title="Status">St.</th>
+                                        <th title="Tipo de Intervenção">Int.</th>
+                                        <th title="PAT/Região">PAT</th>
+                                        <th title="Cliente">Cliente</th>
+                                        <th title="Local de Atendimento">Local</th>
+                                        <th title="Equipamento">Equip.</th>
+                                        <th title="Nome do SLA">SLA</th>
+                                        <th title="Prazo de SLA">PRZ</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -196,147 +198,159 @@
                                         <td><a href="">5303901</a></td>
                                         <td>10/FEV 08:15</td>
                                         <td>16/DEZ 15:00</td>
-                                        <td><span class="r-3 badge badge-warning">T</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-warning">T</span></td>
                                         <td class="align-center">INST</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">001</td>
                                         <td>RUA TEODORO SAMPAI</td>
                                         <td>HSL 5000</td>
                                         <td class="align-center">58</td>
+                                        <td class="align-center"><i class="icon-circle text-success blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">5608218</a></td>
                                         <td>28/MAR 18:27</td>
                                         <td>28/MAR 18:27</td>
-                                        <td><span class="r-3 badge badge-warning">T</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-warning">T</span></td>
                                         <td class="align-center">INST</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">041</td>
                                         <td>NEO TECHNOLOGY</td>
                                         <td>POS VELO</td>
                                         <td class="align-center">52</td>
+                                        <td class="align-center"><i class="icon-circle text-warning blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">5633453</a></td>
                                         <td>10/FEV 08:15</td>
                                         <td>16/DEZ 15:00</td>
-                                        <td><span class="r-3 badge badge-danger">F</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-danger">F</span></td>
                                         <td class="align-center">INST</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">041</td>
                                         <td>PONTO CHIQUE</td>
                                         <td>POS VELO</td>
                                         <td class="align-center">58</td>
+                                        <td class="align-center"><i class="icon-circle text-danger blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">6212835</a></td>
                                         <td>15/JAN 08:34</td>
                                         <td>15/JAN 08:34</td>
-                                        <td><span class="r-3 badge badge-danger">F</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-danger">F</span></td>
                                         <td class="align-center">INST</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">004</td>
                                         <td>CHAPADINHA</td>
                                         <td>TMF 4100</td>
                                         <td class="align-center">56.3</td>
+                                        <td class="align-center"><i class="icon-circle text-success blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">6212947</a></td>
                                         <td>15/JAN 08:34</td>
                                         <td>15/JAN 08:34</td>
-                                        <td><span class="r-3 badge badge-danger">F</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-danger">F</span></td>
                                         <td class="align-center">INST</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">004</td>
                                         <td>AG.REDENÇÃO/PORTO</td>
                                         <td>TMF 4100</td>
                                         <td class="align-center">56.3</td>
+                                        <td class="align-center"><i class="icon-circle text-success blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">6214111</a></td>
                                         <td>18/JAN 11:34</td>
                                         <td>18/JAN 12:34</td>
-                                        <td><span class="r-3 badge badge-primary">A</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-primary">A</span></td>
                                         <td class="align-center">ABER</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">001</td>
                                         <td>SOP-NOVA FRIBURGO</td>
                                         <td>TDC-TAAD</td>
                                         <td class="align-center">17.3</td>
+                                        <td class="align-center"><i class="icon-circle text-warning blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">6214158</a></td>
                                         <td>15/JAN 08:34</td>
                                         <td>15/JAN 08:34</td>
-                                        <td><span class="r-3 badge badge-danger">F</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-danger">F</span></td>
                                         <td class="align-center">INST</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">001</td>
                                         <td>AG MAXIMILIANO</td>
                                         <td>TMF 4100</td>
                                         <td class="align-center">21.3</td>
+                                        <td class="align-center"><i class="icon-circle text-danger blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">6214526</a></td>
                                         <td>15/JAN 08:34</td>
                                         <td>15/JAN 08:34</td>
-                                        <td><span class="r-3 badge badge-secondary">P</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-secondary">P</span></td>
                                         <td class="align-center">INST</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">001</td>
                                         <td>AG.CASCA</td>
                                         <td>TMF 4100</td>
                                         <td class="align-center">15</td>
+                                        <td class="align-center"><i class="icon-circle text-secondary blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">6214518</a></td>
                                         <td>15/JAN 08:34</td>
                                         <td>15/JAN 08:34</td>
-                                        <td><span class="r-3 badge badge-secondary">P</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-secondary">P</span></td>
                                         <td class="align-center">INST</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">001</td>
                                         <td>AG.CASCA</td>
                                         <td>TMF 4100</td>
                                         <td class="align-center">11</td>
+                                        <td class="align-center"><i class="icon-circle text-success blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">6214629</a></td>
                                         <td>18/JAN 11:34</td>
                                         <td>18/JAN 12:34</td>
-                                        <td><span class="r-3 badge badge-primary">A</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-primary">A</span></td>
                                         <td class="align-center">ABER</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">001</td>
                                         <td>CSP - COMPANHIA SI</td>
                                         <td>TDC-TAAD</td>
                                         <td class="align-center">17.3</td>
+                                        <td class="align-center"><i class="icon-circle text-warning blink"></i></td>
                                     </tr>
                                     <tr>
                                         <td><a href="">6214634</a></td>
                                         <td>18/JAN 11:34</td>
                                         <td>18/JAN 12:34</td>
-                                        <td><span class="r-3 badge badge-primary">A</span></td>
+                                        <td class="align-center"><span class="r-3 badge badge-primary">A</span></td>
                                         <td class="align-center">ABER</td>
                                         <td>PSP/OEST</td>
                                         <td class="align-center">001</td>
                                         <td>CSP - COMPANHIA SI</td>
                                         <td>TDC-TAAD</td>
                                         <td class="align-center">17.3</td>
+                                        <td class="align-center"><i class="icon-circle text-success blink"></i></td>
                                     </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <th>OS</th>
-                                        <th>Abert.</th>
-                                        <th>Solic.</th>
-                                        <th>St.</th>
-                                        <th>Interv.</th>
-                                        <th>PAT/Região</th>
-                                        <th>Cliente</th>
-                                        <th>Local</th>
-                                        <th>Equip.</th>
-                                        <th>SLA</th>
+                                        <th>Abertura</th>
+                                        <th>Prazo SLA</th>
+                                        <th title="Status">St.</th>
+                                        <th title="Tipo de Intervenção">Int.</th>
+                                        <th title="PAT/Região">PAT</th>
+                                        <th title="Cliente">Cliente</th>
+                                        <th title="Local de Atendimento">Local</th>
+                                        <th title="Equipamento">Equip.</th>
+                                        <th title="Nome do SLA">SLA</th>
+                                        <th title="Prazo de SLA">PRZ</th>
                                     </tr>
                                 </tfoot>
                             </table>

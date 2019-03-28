@@ -29,11 +29,6 @@
             left: 50%;
         }
     </style>
-    <!--
-    - Head Part - Use Jquery anywhere at page.
-    - http://writing.colin-gourlay.com/safely-using-ready-before-including-jquery/
-    -->
-    <script>(function (w, d, u) { w.readyQ = []; w.bindReadyQ = []; function p(x, y) { if (x == "ready") { w.bindReadyQ.push(y); } else { w.readyQ.push(x); } }; var a = { ready: p, bind: p }; w.$ = w.jQuery = function (f) { if (f === d || f === u) { return a } else { p(f) } } })(window, document)</script>
 </head>
 
 <body class="light">
@@ -54,8 +49,7 @@
                             </div>
                             <div class="float-left info">
                                 <h6 class="font-weight-light mt-2 mb-1">Robson Lima</h6>
-                                <a href="index.html#">
-                                    <i class="icon-circle text-primary blink"></i> Online</a>
+                                <a href="">Sistema Administrador</a>
                             </div>
                         </div>
                         <div class="clearfix"></div>
@@ -198,7 +192,7 @@
                 <div class="animated fadeInUpShort">
                     <div class="card">
                         <div class="card-header white">
-                            <h6>STATUS</h6>
+                            <h6>RESUMO DOS PRINCIPAIS CLIENTES</h6>
                         </div>
                         <div class="card-body p-0">
                             <div class="lightSlider" data-item="6" data-item-xl="4" data-item-md="2" data-item-sm="1" data-pause="5000" 
@@ -253,79 +247,64 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
 
                     <div class="row row-eq-height my-3">
-                        <!-- Social Widget Start -->
-                        
-                        <!-- Product Widget End -->
-                        <!-- Progress Widget Start -->
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card-header white">
-                                    <strong> Progress </strong>
+                                    <strong>RESUMO DE INDICADORES</strong>
                                 </div>
                                 <div class="card-body pt-0">
                                     <div class="my-3">
-                                        <small>25% Complete</small>
+                                        <small>Reincidência: 45%</small>
                                         <div class="progress" style="height: 3px;">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%;"
-                                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="my-3">
-                                        <small>45% Complete</small>
+                                        <small>Pendência: 60%</small>
                                         <div class="progress" style="height: 3px;">
-                                            <div class="progress-bar bg-info" role="progressbar" style="width: 45%;"
-                                                 aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="my-3">
-                                        <small>60% Complete</small>
+                                        <small>Índice de Quebra: 75%</small>
                                         <div class="progress" style="height: 3px;">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;"
-                                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="my-3">
-                                        <small>75% Complete</small>
+                                        <small>SLA: 98%</small>
                                         <div class="progress" style="height: 3px;">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;"
-                                                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 98%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="my-3">
-                                        <small>100% Complete</small>
+                                        <small>Produtividade: 100%</small>
                                         <div class="progress" style="height: 3px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
-                                                 aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Progress Widget End -->
-                        <!-- Visitors Widget Start -->
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card-header white">
-                                    <strong> Visitors </strong>
+                                    <strong>RECURSOS DO SERVIDOR</strong>
                                 </div>
                                 <div class="card-body">
-                                    <div class="circular-progressbar ">
-                                        <input type='text' value="50" data-thickness="0.2" data-width="100" data-bgColor="#eee"
-                                               data-fgColor="#F25E5E">
+                                    <div class="circular-progressbar">
+                                        <input type='text' value="62" data-thickness="0.2" data-width="100" data-bgColor="#aed581" data-fgColor="#388e3c">
                                         <div class="mt-3 text-center">
-                                            <h5 class="heading">Traffic</h5>
-                                            <span>Direct Visitors</span>
+                                            <h5 class="heading">Tráfego</h5>
+                                            <span>Status Online</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Visitors Widget End -->
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header white">
@@ -349,7 +328,7 @@
                                                     <div class="chat-meta">1 hora atrás
                                                         <span class="float-right">Enviado por: Hugo Leonardo</span>
                                                     </div>
-                                                    Olá! Precisa de ajuda?
+                                                    Olá! Precisando de ajuda?
                                                     <div class="clearfix"></div>
                                                 </div>
                                             </li>
@@ -418,7 +397,6 @@
                                 <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
